@@ -106,11 +106,11 @@ using the following formulae
 
 * [Trapezoidal Rule](http://mathworld.wolfram.com/TrapezoidalRule.html)
 
-  ![trapezoidal](https://raw.githubusercontent.com/uwhpsc-2016/homework3_solution/master/report/trapezoidal.png)
+  ![trapezoidal](https://raw.githubusercontent.com/uwhpsc-2016/homework3/master/report/trapezoidal.png)
   
 * [Simpson's Rule](http://mathworld.wolfram.com/SimpsonsRule.html)
 
-  ![simpson](https://raw.githubusercontent.com/uwhpsc-2016/homework3_solution/master/report/simpson.png)
+  ![simpson](https://raw.githubusercontent.com/uwhpsc-2016/homework3/master/report/simpson.png)
 
 Scipy has built-in functions
 [`scipy.linalg.trapz`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.trapz.html#scipy.integrate.trapz)
