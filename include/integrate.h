@@ -30,10 +30,13 @@ double simps_serial(double* fvals, double* x, int N);
 double simps_parallel(double* fvals, double* x, int N, int num_threads);
 
 
-double time_simps_parallel(double* fvals, double* x, int N, int num_threads);
+double time_simps_parallel(double* fvals, double* x, int N, int num_threads,
+                           int repeat);
 
 
-double simps_parallel_chunked(double* fvals, double* x, int N, int num_threads, int chunk_size);
+double simps_parallel_chunked(double* fvals, double* x, int N, int num_threads,
+                              int chunk_size);
 
 
-double time_simps_parallel_chunked(double* fvals, double* x, int N, int num_threads, int chunk_size);
+double time_simps_parallel_chunked(double* fvals, double* x, int N,
+                                   int num_threads, int chunk_size, int repeat);
