@@ -1,5 +1,5 @@
 # compiler settings
-CC=gcc-5
+CC=gcc
 CFLAGS=-c -Wall -fPIC -fopenmp -lm
 LDFLAGS=--shared -fopenmp
 
