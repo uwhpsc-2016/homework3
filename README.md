@@ -182,7 +182,19 @@ arrays or your test scripts in the directory `ctests`.
 
 Your implementations will be run through the following test suite. Tests will
 use an `x` where distance between subsequent points, `x[i+1]-x[i]`, is not
-necessarily uniform.
+necessarily uniform. In particular, tests will be run on domains that look
+something like:
+
+``` python
+x = numpy.append(linspace(-1,0,8,endpoint=False), linspace(0,3,127))
+```
+
+See
+[Issue #7](https://github.com/uwhpsc-2016/homework3/issues/7#issuecomment-218065663)
+for details on why we use domains of this form. In short, each Simpson's
+subinterval needs the same `dx`. However, different Simpson's rule subintervals
+are allowed to have different `dx.`
+
 
 `trapz` Tests:
 
