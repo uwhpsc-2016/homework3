@@ -66,7 +66,7 @@ def trapz_parallel(fvals, x, num_threads=4):
                              "library function.")
     return output
 
-def time_trapz_parallel(fvals, x, num_threads=4, repeat=5):
+def time_trapz_parallel(fvals, x, num_threads=4):
     r""" Returns the amount of time it takes to perform parallel trapezoidal rule.
 
     Optionally specify number of threads to use in omp as well as the number of
@@ -98,8 +98,8 @@ def time_trapz_parallel(fvals, x, num_threads=4, repeat=5):
     try:
         f = homework3library.time_trapz_parallel
         f.restype = c_double
-        f.argtypes = [c_void_p, c_void_p, c_int, c_int, c_int]
-        output = f(fvals.ctypes.data, x.ctypes.data, N, num_threads, repeat)
+        f.argtypes = [c_void_p, c_void_p, c_int, c_int]
+        output = f(fvals.ctypes.data, x.ctypes.data, N, num_threads)
     except AttributeError:
         raise AttributeError("Something wrong happened when calling the C "
                              "library function.")
