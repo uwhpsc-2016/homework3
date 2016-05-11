@@ -297,7 +297,7 @@ function `time_simps_parallel` with `num_threads = 4` for some value `N` between
 `1e7` and `1e18`.
 
 ```
-N = # approximately 1e7 and approximately 1e18
+N = # approximately 2**7 and approximately 2**18
 x = numpy.linspace(-1,3,N)
 y = sin(exp(x))
 ```
